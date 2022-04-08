@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humo Arena</title>
+
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-nav">
+            <div class="logo">МЕГАТРЕНИНГ <span>22</span></div>
+            <div class="navbar-place">
+              <img src="/assets/icons/calendar.svg" alt="" />
+              <p id="thatday">1-2 июня</p>
+
+              <img src="/assets/icons/map-marker.svg" alt="" />
+              <p id="locate">Humo Arena, Ташкент</p>
+            </div>
+          </div>
+          <form class="navbar-form">
+            <div class="fixedbtn">
+              <button class="button blue shine" id="buyTicket">Купить билет</button>
+              
+            </div>
+            <!-- <img id="language" src="" height="30px" , width="30px" /> -->
+          </form>
+        </div>
+        <div class="navbar-place-none">
+          <div>
+            <img src="/assets/icons/calendar.svg" alt="" />
+            <p id="thatDay">1-2 июня</p>
+          </div>
+
+          <div>
+            <img src="/assets/icons/map-marker.svg" alt="" />
+            <p id="location">Humo Arena, Ташкент</p>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main">
+        <div class="container">
+          <div class="main-info">
+            <h1>МЕГАТРЕНИНГ 20<span>22</span></h1>
+            <p id="mainText">
+              Впервые в Узбекистане, самый масштабный международный <span>бизнес форму по рекламе</span>, продажам и систематизации бизнеса.
+            </p>
+            <button id="bronbtn">Забронировать место</button>
+          </div>
+
+          <div class="form" id="form">
+            <div class="modalHead">
+              <div class="modal" id="modal">
+                <div class="cancel">
+                  <a href="#"
+                    ><img
+                      src="/assets/icons/cancel.svg"
+                      id="cancel"
+                      alt="cancel"
+                  /></a>
+                </div>
+                <h1>Заполните форму</h1>
+                <form>
+                  <div class="name">
+                    <label for="">Имя</label>
+                    <input type="text " placeholder="Ваше имя" />
+                  </div>
+                  <div class="tel">
+                    <label for="">Телефонный номер</label>
+                    <input type="text" placeholder="+" />
+                  </div>
+                  <div class="type">
+                    <img src="/assets/icons/triangle.svg" alt="tringle" />
+                    <label for="">Тип активности</label>
+                    <div id="custom-select">
+                      <select id="select">
+                        <option value="0">Выбирать</option>
+                        <option value="1">Предприниматель</option>
+                        <option value="2">Сотрудник</option>
+                        <option value="3">Управленец</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button id="pay">Забронировать место</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment" id="payment">
+            <div class="wrapper">
+              <div class="display"></div>
+
+              <div>
+                <div id="biznes"></div>
+              </div>
+
+              <hr />
+              <div class="final">
+                <h1>Предприниматель</h1>
+                <div class="res">40$</div>
+              </div>
+
+              <button id="lastbtn" type="button">Оплатите</button>
+            </div>
+          </div>
+
+          <div class="main-card">
+            <div class="ticket">
+              <img src="/assets/icons/ticket.svg" alt="ticket" />
+            </div>
+            <div class="info">
+              <h4 id="aksiyaLineOne">Акция. 2 билета</h4>
+              <h4 id="aksiyaLineTwo">по цене 1 го до 10 мая</h4>
+            </div>
+            <div class="time">
+              <p id="endAksiya">До конца акции осталось :</p>
+
+              <div class="get-time">
+                <div class="day">
+                  <h2 id="day">00</h2>
+                  <p id="dayAksiya">дней</p>
+                </div>
+                <span>:</span>
+                <div class="hour">
+                  <h2 id="hour">00</h2>
+                  <p id="hourAksiya">часов</p>
+                </div>
+                <span>:</span>
+                <div class="minut">
+                  <h2 id="min">00</h2>
+                  <p id="minAksiya">минут</p>
+                </div>
+                <span>:</span>
+                <div class="secund">
+                  <h2 id="sec">00</h2>
+                  <p id="secAksiya">секунд</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </header>
+    <!-- Header finished -->
+
+    <!-- Section-one started -->
+    <section class="section">
+      <div class="container">
+        <div class="section-left">
+          <img src="/assets/images/main.png" alt="mainimg" />
+          <div class="border"></div>
+        </div>
+
+        <div class="section-right">
+          <h1 id="megaTrening">
+            ДОБРО ПОЖАЛОВАТЬ В <span> МЕГАТРЕНИНГ 2022</span>
+          </h1>
+          <p id="bussiness">
+            Международный бизнес форум который объединяет бизнесменов, топ-менеджеров и управленцев
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section-one finished -->
+
+    <!-- statistic started -->
+    <div class="statistic">
+      <img src="/assets/icons/stat1.png" alt="stat1" class="stat1" />
+      <img src="/assets/icons/stat2.png" alt="stat2" class="stat2" />
+      <img src="/assets/icons/ellips1.png" alt="ellips1" class="ellips1" />
+      <img src="/assets/icons/ellips2.png" alt="ellips2" class="ellips2" />
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <h2 class="card-number">10000+</h2>
+            <p id="bussinessman">предпринимателей и топ-менеджеров</p>
+          </div>
+          <div class="card">
+            <h2 class="card-number">12</h2>
+            <p id="speaker">международных спикеров</p>
+          </div>
+          <div class="card">
+            <h2 class="card-number">2</h2>
+            <p id="tools">дня инструменты предназначенные только для развития бизнеса</p>
+          </div>
+        </div>
+        <form>
+          <button id="buyTicketTwo" type="button">Купить билет</button>
+        </form>
+      </div>
+    </div>
+    <!-- statistic finished -->
+
+    <div class="spiker">
+      <div class="container">
+        <div class="spiker-info">
+          <h1 id="international">
+            12 международных и местных  <span>спикеров</span>
+          </h1>
+        </div>
+        <div class="spikers">
+          <div class="spikers-item">
+            <div class="profil">
+              <h3>Шамиль Аляутдинов</h3>
+              <img src="/assets/icons/shadow.png" alt="" class="shadow">
+              <img src="/assets/images/spiker.jpg" alt="portret" />
+            </div>
+            <div class="logo">
+              <img src="/assets/images/company.svg" alt="company">
+            </div>
+          </div>
+
+          <div class="spikers-item">
+            <div class="profil">
+              <h3>Умиджон Ишмухаммедов</h3>
+              <img src="/assets/icons/shadow.png" alt="" class="shadow">
+              <img src="/assets/images/spiker1.jpg" alt="portret" />
+            </div>
+            <div class="logo">
+              <img src="/assets/images/eduaction.jpg" alt="company">
+            </div>
+          </div>
+
+          <div class="spikers-item">
+            <div class="profil">
+              <h3></h3>
+              <img src="/assets/icons/shadow.png" alt="" class="shadow">
+              <img src="/assets/icons/user.png" alt="portret" />
+            </div>
+            <div class="logo">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="spiker-bottom">
+          <h2 id="forForum">Хотите предложить бизнес спикера ? </h2>
+          <p id="auditoria">
+            Мы всегда готовы рассмотреть пожелания нашей аудитории.
+          </p>
+          <button type="button" id="inviteSpiker">Предложить спикера</button>
+        </div>
+      </div>
+    </div>
+    <!-- Spiker finished -->
+
+    <!-- statistic started -->
+    <div class="event">
+      <img src="/assets/icons/ellips1.png" alt="ellips1" class="ellips1" />
+      <img src="/assets/icons/ellips2.png" alt="ellips2" class="ellips2" />
+      <div class="container">
+        <h1 id="event"><span> 2 дневный</span> НЕЗАБЫВАЕМЫХ ДНЯ мероприятие</h1>
+        <div class="cards">
+          <div class="card">
+            <h2 id="experince" class="card-number">Опыт</h2>
+            <p id="doExperience">
+              Только практические инструменты которые дают реальные результаты
+            </p>
+          </div>
+          <div class="card">
+            <h2 class="card-number">Мотивация</h2>
+            <p id="max">Вы получите максимальную мотивацию которая двинет Вас ещё выше по олимпу бизнеса</p>
+          </div>
+          <div class="card">
+            <h2 class="card-number">Энергия</h2>
+            <p id="everySpeaker">
+              Каждый бизнес спикер даст Вам энергию которая даст возможность добиться лучших результатов
+            </p>
+          </div>
+        </div>
+        <form>
+          <button id="buyTicketThree" type="button">Купить билет</button>
+        </form>
+      </div>
+    </div>
+    <!-- statistic finished -->
+
+    <!-- Trend started -->
+    <div class="trend">
+      <img src="/assets/icons/blobs.png" alt="blobs" class="element1" />
+      <img src="/assets/icons/blobs2.png " alt="blobs" class="element2" />
+      <div class="container">
+        <h1 id="trend">
+          Узнайте первыми о мировых бизнес <span> трендах 2022-2023 гг</span>
+        </h1>
+        <p id="worldChange">
+          Будьте готовы к мировым изменениям порядки и обгоните своих конкурентов
+        </p>
+        <div class="trend-part">
+          <div class="trend-left">
+            <ul>
+              <li><span></span> Реклама</li>
+              <li>
+                <span></span>
+                <div id="sale">Продажа</div>
+              </li>
+              <li>
+                <span></span>
+                <div id="system">Систематизация</div>
+              </li>
+              <li>
+                <span></span>
+                <div id="automat">Aвтоматизация</div>
+              </li>
+            </ul>
+          </div>
+          <div class="trend-right">
+            <ul>
+              <li>
+                <span></span>
+                <div id="financial">Финансы</div>
+              </li>
+              <li>
+                <span></span>
+                <div id="management">Управления</div>
+              </li>
+              <li><span></span> Стратегия</li>
+              <li><span></span> HR</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Trend finished -->
+
+    <!-- Partner started -->
+    <div class="partner">
+      <img src="/assets/icons/partner1.png" alt="ellips1" class="ellips1" />
+      <img src="/assets/icons/partner2.png" alt="ellips2" class="ellips2" />
+      <div class="container">
+        <h1 id="sponpart">СПОНСОРЫ И ПАРТНЕРЫ</h1>
+        <div class="sponsor">
+          <h2 id="mainSponsor">Главный спонсор</h2>
+          <div class="wrapper">
+            <div id="sponsor">1</div>
+          </div>
+
+          <h2 id="formalSponsor">Официальный спонсор</h2>
+          <div class="wrapper">
+            <div id="sponsor">2</div>
+            <div id="sponsor">3</div>
+          </div>
+
+          <h2 id="mediaPartner">Мадиапартнер</h2>
+          <div class="wrapper">
+            <div id="sponsor">4</div>
+            <div id="sponsor">5</div>
+            <div id="sponsor">6</div>
+          </div>
+
+          <h2 id="partner">Партнеры</h2>
+          <div class="wrapper">
+            <div id="sponsor" style="padding: 5px">
+              <img src="/assets/images/unical.png" style="width: 80%" alt="" />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/regprint.png"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/oson_sot.png"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/registon_logo.png"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/it_school.png"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+            <div id="sponsor" style="padding: 5px">
+              <img
+                src="/assets/images/regbooks.svg"
+                style="width: 100%"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <button id="bePartner" type="button">Стать партенром</button>
+      </div>
+    </div>
+    <!-- Partner finished -->
+
+    <!-- Price started -->
+    <div class="price">
+      <div class="container">
+        <h1 id="priceTicket">Цены билетов</h1>
+        <div class="cards">
+          <div class="card">
+            <div id="staff" class="card-header">Сотрудник</div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span></span>
+                  <p id="twoDay">2 дня</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="twoFloor">2 этаж</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">40$</div>
+          </div>
+          <div class="card">
+            <div id="manager" class="card-header">Управленец</div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span></span>
+                  <p id="twoday">2 дня</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="oneFloor">1 этаж</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="material">Рaздаточные материаллы</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">80$</div>
+          </div>
+          <div class="card">
+            <div id="biznesmen" class="card-header">Предприниматель</div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span></span>
+                  <p id="twodays">2 дня</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="scenes">2-10 ряды вокруг сцены</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="materials">Рaздаточные материаллы</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">200$</div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Бизнесмен</div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span></span>
+                  <p id="twoDays">2 дня</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="scene">1 ряды вокруг сцены</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="materialt">Рaздаточные материаллы</p>
+                </li>
+                <li>
+                  <span></span>
+                  <p id="banket">Банкет после мероприятие</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">400$</div>
+          </div>
+        </div>
+        <button id="cheapTicket">2 билета по цене 1 го</button>
+      </div>
+    </div>
+    <!-- Price finished -->
+
+    <!-- map started -->
+    <div class="map">
+      <iframe
+        height="600"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11988.203930759972!2d69.2521083!3d41.3077545!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d44d4e8afe5d8aa!2z0KXRg9C80L4g0JDRgNC10L3QsA!5e0!3m2!1sru!2s!4v1647633394486!5m2!1sru!2s"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+      <div class="wrapper">
+        <div class="border"></div>
+        <div class="card">
+          <p id="where">Где будет проходить? </p>
+          <div class="date">
+            <div>
+              <img src="/assets/icons/calendar.svg" alt="" />
+              <p id="thatDays">1-2 июня</p>
+            </div>
+            <div>
+              <img src="/assets/icons/map-marker.svg" alt="" />
+             <p id="locations"> Humo Arena, Ташкент</p>
+            </div>
+          </div>
+          <p id="question">По вопрсам обращаться по номеру </p>
+          <p>
+            <img src="/assets/icons/phone.svg" alt="" />
+            +998-78-1-222-222
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- map finished -->
+
+    <div class="top-footer">
+      <img src="/assets/icons/stat1.png" alt="stat1" class="stat1" />
+      <img src="/assets/icons/stat2.png" alt="stat2" class="stat2" />
+      <img src="/assets/icons/ellips1.png" alt="ellips1" class="ellips1" />
+      <img src="/assets/icons/ellips2.png" alt="ellips2" class="ellips2" />
+      <div class="container">
+        <h1 id="join">
+         <span>Учуавствуйте в акции</span>  2 билета по цене 1 го
+        </h1>
+        <button type="button" id="cheapTicketTwo">
+          2 билета по цене 1 го
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-part">
+          <div class="part1">
+            <div class="logo">МЕГАТРЕНИНГ <span>22</span></div>
+            <p>ООО “PERFECTMALL INTERNATIONAL”</p>
+            <div class="media">
+              <a href=""><img src="/assets/icons/facebook.svg" alt="" /></a>
+              <a href=""><img src="/assets/icons/instagram.svg" alt="" /></a>
+              <a href=""><img src="/assets/icons/youtube.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="part2">
+            <h3>ООО “PERFECTMALL INTERNATIONAL</h3>
+            <div class="links">
+              <div class="link">
+                <p><a id="footMain" href="#">Главный</a></p>
+                <p><a id="footSpeaker" href="#">Спикеры</a></p>
+              </div>
+              <div class="link2">
+                <p><a id="footPartner" href="#">Стать партнером</a></p>
+                <p><a id="footInvite" href="#">Предложить спикера</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="part3">
+            <h3 id="link">СВЯЗАТЬСЯ</h3>
+            <p>+998-78-1-222-222</p>
+          </div>
+        </div>
+        <hr />
+        <p>© Мегатренинг. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <script src="assets/index.js"></script>
+  </body>
+</html>
