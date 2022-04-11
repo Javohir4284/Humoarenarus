@@ -39,7 +39,6 @@ header {
   background: url(/assets/images/main.png) #000;
   background-repeat: no-repeat;
   background-size: cover;
-  // height: 100vh;
 }
 
 .navbar {
@@ -557,6 +556,14 @@ header {
       .logo{
         img{
           filter: brightness(0) invert(1);
+        }
+      }
+    }
+
+    &-item:nth-child(4){
+      .logo{
+        img{
+          height: 100%;
         }
       }
     }
