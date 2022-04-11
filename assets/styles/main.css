@@ -337,7 +337,7 @@
   }
   .spiker .spikers-item .profil h3 {
     left: 5px !important;
-    bottom: 0 !important;
+    bottom: 5px !important;
     font-size: 12px !important;
   }
   .spiker h1 {
@@ -381,10 +381,6 @@
 
   .top-footer img {
     max-width: 200px !important;
-  }
-  .top-footer .container button {
-    font-size: 20px !important;
-    width: 100% !important;
   }
   .top-footer h1 {
     font-size: 30px !important;
@@ -922,10 +918,13 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.spiker .spikers-item:first-child .logo img {
+.spiker .spikers-item:nth-child(3) .logo img {
+  filter: invert(16%) sepia(57%) saturate(7084%) hue-rotate(357deg) brightness(98%) contrast(117%);
+}
+.spiker .spikers-item:nth-child(1) .logo img, .spiker .spikers-item:nth-child(4) .logo img {
   filter: brightness(0) invert(1);
 }
-.spiker .spikers-item:nth-child(4) .logo img {
+.spiker .spikers-item:nth-child(2) .logo img {
   height: 100%;
 }
 .spiker .spikers-item {
