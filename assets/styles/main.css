@@ -309,6 +309,10 @@
   .main-info h1 {
     font-size: 40px !important;
   }
+  .main .form h1 {
+    padding: 0 24px !important;
+    font-size: 24px;
+  }
   .main .form form button {
     padding: 10px !important;
   }
@@ -547,6 +551,7 @@ header {
   font-family: sfProRegular;
   color: #fff;
   margin: 16px auto;
+  font-size: 22px;
 }
 .main .payment .display {
   background-color: #c4c4c4;
@@ -594,7 +599,7 @@ header {
 }
 .main .payment .bussiness .example .result {
   margin-top: 8px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 130%;
   color: #242424;
   margin-left: 24px;
